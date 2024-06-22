@@ -10,7 +10,7 @@
         "symfony/http-client": "^5.4",
         "symfony/notifier": "^5.4",
         "symfony/event-dispatcher-contracts": "^3.0",
-        "google/auth": "^1.40"
+        "google/auth": "^1.10"
     },
     "authors": [
         {

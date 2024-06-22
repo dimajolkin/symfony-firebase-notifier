@@ -1,3 +1,4 @@
 /vendor/
 example/*.json
 .idea
+composer.lock
