@@ -1,0 +1,21 @@
+{
+    "name": "dimajolkin/symfony-firebase-notifier",
+    "autoload": {
+        "psr-4": {
+            "Dimajolkin\\SymfonyFirebaseNotifier\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "symfony/http-client": "^6.0",
+        "symfony/notifier": "^6.0",
+        "symfony/event-dispatcher-contracts": "^3.0",
+        "google/auth": "^1.40"
+    },
+    "authors": [
+        {
+            "name": "Dima Jolkin",
+            "email": "dimajolkin@gmail.com"
+        }
+    ]
+}
