@@ -23,7 +23,7 @@ $validUserToken = 'coGZPev5I0T_r5CSde6DMk:APA91bGz_Mb_Kv01tRJc18Nerhc-DTHxaxthD9
 $invalidUserToken = 'ftmH2AqHzENrv3se4663wx:APA91bE2iBfpzC-NFijaSfOvCCYCWvud10OsDvpFOk9ZA3Mk4UY_fbSx4k7BNIjJb6EUzPPslcxi7L7iU3KtFhwWuCs_PrjXxboVvr0urUQn25KPIO96lkFny76WJ6GMeIL1RoAEX3bw';
 
 $options = new TargetMessageOptions(
-    token: $validUserToken,
+    token: $invalidUserToken,
     common: new CommonNotification(
       title: 'incident title',
       body: 'test message',

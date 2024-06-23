@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Dimajolkin\SymfonyFirebaseNotifier;
 
+use Dimajolkin\SymfonyFirebaseNotifier\Exception\UnregisteredException;
 use InvalidArgumentException;
 use Symfony\Component\Notifier\Exception\TransportException;
 use Symfony\Component\Notifier\Exception\UnsupportedMessageTypeException;
@@ -60,8 +61,14 @@ final class FirebaseTransport extends AbstractTransport
 
         if ($jsonContents && isset($jsonContents['results'][0]['error'])) {
             $errorMessage = $jsonContents['results'][0]['error'];
+
+
         } elseif (200 !== $statusCode) {
             $errorMessage = $response->getContent(false);
+        }
+
+        if ($statusCode === 404) {
+            throw new UnregisteredException('Token unregistered: '.$errorMessage, $response);
         }
 
         if (null !== $errorMessage) {
