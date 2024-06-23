@@ -1,3 +1,7 @@
+# Firebase Notifier
+
+Provides Firebase integration for Symfony Notifier.
+
 Adapted for using http
 
 Close from : https://github.com/symfony/firebase-notifier
