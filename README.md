@@ -4,7 +4,7 @@ Provides Firebase integration for Symfony Notifier.
 
 Adapted for using http
 
-Close from : https://github.com/symfony/firebase-notifier
+Base copy from : https://github.com/symfony/firebase-notifier
 
 ```php
 
