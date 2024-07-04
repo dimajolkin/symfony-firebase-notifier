@@ -1,11 +1,11 @@
 # Firebase Notifier
 
-# Install
+### Install
 
 ```bash
    composer required dimajolkin/symfony-firebase-notifier
 ```
-
+### Docs
 Provides Firebase integration for Symfony Notifier.
 
 Adapted for using http
