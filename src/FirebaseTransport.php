@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Dimajolkin\SymfonyFirebaseNotifier;
 
 use Dimajolkin\SymfonyFirebaseNotifier\Exception\UnregisteredException;
-use InvalidArgumentException;
 use Symfony\Component\Notifier\Exception\TransportException;
 use Symfony\Component\Notifier\Exception\UnsupportedMessageTypeException;
 use Symfony\Component\Notifier\Message\ChatMessage;
